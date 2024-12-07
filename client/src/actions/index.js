@@ -15,7 +15,7 @@ import {
 } from "./types";
 
 export const fetchProducts = category => async dispatch => {
-  const res = await axios.get(`/api/products/:${category}`);
+  const res = await axios.get(`https://auto-shop-server-xi.vercel.app/api/products/:${category}`);
   dispatch({ type: FETCH_PRODUCTS, payload: res.data });
 };
 
@@ -76,18 +76,18 @@ export function removeFromWhishList(product) {
 }
 
 export const fetchCars = () => async dispatch => {
-  const res = await axios.get("/api/cars");
+  const res = await axios.get("https://auto-shop-server-xi.vercel.app/api/cars");
   console.log(res.data)
   dispatch({ type: FETCH_CARS, payload: res.data });
 };
 
 export const fetchCar = id => async dispatch => {
-  const res = await axios.get(`/api/car/:${id}`);
+  const res = await axios.get(`https://auto-shop-server-xi.vercel.app/api/car/:${id}`);
   dispatch({ type: FETCH_SINGLE_CAR, payload: res.data });
 };
 
 export const fetchFiltredCars = filters => async dispatch => {
-  const res = await axios.post("api/carfilter", filters);
+  const res = await axios.post("https://auto-shop-server-xi.vercel.app/api/carfilter", filters);
   dispatch({ type: FETCH_FILTRED_CARS, payload: res.data });
 };
 
