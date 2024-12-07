@@ -9,6 +9,7 @@ class ProductList extends Component{
         super();
 
     }
+    
     renderProductCards(product){
         
          return(

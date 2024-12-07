@@ -77,6 +77,7 @@ export function removeFromWhishList(product) {
 
 export const fetchCars = () => async dispatch => {
   const res = await axios.get("/api/cars");
+  console.log(res.data)
   dispatch({ type: FETCH_CARS, payload: res.data });
 };
 

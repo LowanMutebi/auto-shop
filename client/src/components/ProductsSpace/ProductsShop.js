@@ -77,6 +77,7 @@ class ProductsShop extends Component{
 
 
 function mapStateToProps({ products }) {
+    console.log(products)
     return { products };
 }
   
