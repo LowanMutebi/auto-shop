@@ -6,7 +6,12 @@ const cors = require('cors')
 
 
 app.use(bodyParser.json());
-app.use(cors())
+
+var corsOptions = {
+  origin: '*',
+  optionsSuccessStatus: 200
+}
+app.use(cors(corsOptions));
 
 
 
