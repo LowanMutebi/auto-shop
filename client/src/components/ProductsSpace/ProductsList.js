@@ -24,8 +24,10 @@ class ProductList extends Component{
           );
           
     }
+
     
     render(){
+        console.log(this.props.productslist)
         if (this.props.displayType ==='cards')
         return(
             <div>
