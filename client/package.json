@@ -2,16 +2,10 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/auth/google": {
-      "target": "https://auto-shop-server-xi.vercel.app/"
-    },
-    "/api/*": {
-      "target": "https://auto-shop-server-xi.vercel.app/"
-    }
-  },
+  "proxy": "https://auto-shop-server-xi.vercel.app/",
   "dependencies": {
     "axios": "^0.16.2",
+    "http-proxy-middleware": "^3.0.3",
     "jquery": "^3.3.1",
     "react": "^16.2.0",
     "react-addons-update": "^15.6.2",
