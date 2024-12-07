@@ -1,11 +1,11 @@
 const fetchedCars = require('../cars.js');
 
 module.exports = app => {
-  app.get('https://auto-shop-server-xi.vercel.app/api/cars',(req, res) => {
+  app.get('https://auto-shop-server-dfii7aeaw-lowanmutebis-projects.vercel.app/api/cars',(req, res) => {
     res.send(fetchedCars);
   });
 
-  app.post('https://auto-shop-server-xi.vercel.app/api/carfilter',(req,res)=>{
+  app.post('https://auto-shop-server-dfii7aeaw-lowanmutebis-projects.vercel.app/api/carfilter',(req,res)=>{
     console.log('**********************************');
     console.log(req.body);
     console.log('**********************************');
