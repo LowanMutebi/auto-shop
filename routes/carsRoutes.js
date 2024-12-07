@@ -2,7 +2,7 @@ const fetchedCars = require('../cars.js');
 var cors = require('cors')
 
 var corsOptions = {
-  origin: '*',
+  origin: 'https://auto-shop-frontend.vercel.app/',
   optionsSuccessStatus: 200
 }
 
