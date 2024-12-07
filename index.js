@@ -2,7 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
+const cors = require('cors')
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,
+  optionSuccessStatus:200
+}
+
 app.use(bodyParser.json());
+app.use(cors(corsOptions));
+
+
 
 require('./routes/productsRoutes')(app);
 require('./routes/carsRoutes')(app);
